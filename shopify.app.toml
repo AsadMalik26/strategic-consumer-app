@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "3da952c45dab9253f7d64a746f753a85"
+name = "strategic-consumer-app"
+handle = "strategic-consumer-app-4"
+application_url = "https://numerical-abilities-repair-slides.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "test-hydrogen-asad.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://numerical-abilities-repair-slides.trycloudflare.com/auth/callback",
+  "https://numerical-abilities-repair-slides.trycloudflare.com/auth/shopify/callback",
+  "https://numerical-abilities-repair-slides.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
